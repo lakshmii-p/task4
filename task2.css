@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff, #f5f3ff, #ede9fe);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+/* General container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Page Header */
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e1e2f;
+}
+
+.header p {
+  color: #444;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Section and Card */
+.section {
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #ffffffee;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2d2d42;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Inputs */
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+}
+
+/* Button */
+button {
+  padding: 0.9rem 2rem;
+  background-color: #6d28d9;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5b21b6;
+}
+
+/* To-do List */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}

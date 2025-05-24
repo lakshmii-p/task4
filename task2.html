@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form & To-Do List</title>
+  <link rel="stylesheet" href="task2.css" />
+</head>
+<body>
+  <div class="main-bg">
+    <!-- Page Intro -->
+    <div class="container header">
+      <h1>Welcome to the Interactive Webpage</h1>
+      <p>Includes a Contact Form and a Dynamic To-Do List</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+      <div class="card">
+        <h2 class="section-title">📧 Contact Form</h2>
+        <p>Fill out the form and submit your details</p>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="formMsg"></p>
+      </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section class="section">
+      <div class="card">
+        <h2 class="section-title">✅ Dynamic To-Do List</h2>
+        <p>Manage your tasks below</p>
+        <form id="todoForm">
+          <input type="text" id="todoInput" placeholder="Add a new task" required />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="todoList"></ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="task2.js"></script>
+</body>
+</html>
