@@ -1,130 +1,110 @@
-.bg-container {
-    background-image: url("https://wallpaperaccess.com/full/1744552.jpg");
-    height: 100vh;
-    background-size: cover;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #333;
 }
 
-.tourism-card {
-    text-align: center;
-    background-color: black;
-    padding: 5px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+header {
+  background: linear-gradient(to right, #2196f3, #21cbf3);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #1b98e0;
 }
 
-.main-heading {
-    color: white;
-    font-family: "Roboto";
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
 }
 
-.paragraph {
-    font-family: "Roboto";
-    color: white;
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.button {
-    color: white;
-    background-color: #F0B813;
-    width: 138px;
-    height: 36px;
-    border-width: 0px;
-    border-radius: 20px;
-    font-weight: bolder;
+h2 {
+  border-left: 6px solid #1b98e0;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: #1b98e0;
+  font-size: 1.8rem;
 }
 
-.bk {
-    background-image: url('https://i.pinimg.com/originals/a9/2b/5b/a92b5bf1093e143525914e5b9e6b98fa.jpg');
-    background-size: cover;
-    height: 100vh;
+.quiz-question {
+  margin-bottom: 2rem;
 }
 
-.head {
-    font-family: Roboto;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-    text-decoration: underline;
+.quiz-options label {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.6rem 0.8rem;
+  background: #f1f8ff;
+  border-left: 4px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.box {
-    background-color: white;
-    padding: 16px;
-    border-radius: 20px;
+.quiz-options label:hover {
+  background: #e0f0ff;
+  border-left-color: #1b98e0;
 }
 
-.par {
-    color: black;
-    font-weight: bold;
-    padding: 10px;
+button {
+  background: #1b98e0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(27, 152, 224, 0.3);
+  transition: background 0.3s ease;
 }
 
-.g {
-    color: #297CCD;
-    text-align: center;
-    font-size: 28px;
-    padding: 5px;
+button:hover {
+  background: #1479b8;
 }
 
-.gu {
-    height: 100px;
-    width: 130px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 10px;
+.result, .joke {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  background: #f0f9ff;
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 5px solid #1b98e0;
 }
 
-.mar {
-    margin: 15px;
+hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
 }
 
-.bkimg {
-    background-image: url('https://wallpapercave.com/wp/wp2009423.jpg');
-    background-size: cover;
-    height: 100vh;
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  button {
+    width: 100%;
+  }
 }
 
-.detailedview {
-    color: white;
-    font-weight: bolder;
-    font-family: Times New Roman;
-    font-size: 40px;
-    padding: 15px;
-}
 
-.bkcard {
-    background-color: white;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin: 25px;
-}
-
-.title {
-    color: #296CBA;
-    font-size: 36px;
-    font-family: Roboto;
-    font-weight: bolder;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.para {
-    color: black;
-    font-family: cursive;
-    font-size: 32px;
-    padding: 20px;
-}
-
-.ui {
-    color: black;
-    font-weight: bolder;
-    font-size: 28px;
-}
-
-/* Responsive Fix for Images in Third Section */
-@media (max-width: 768px) {
-    .gu {
-        height: 80px;
-        width: 100px;
-    }
-}
 
