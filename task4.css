@@ -1,0 +1,233 @@
+:root {
+  --bg: #f5f7fa;
+  --text: #1a1a1a;
+  --primary: #4a90e2;
+  --secondary: #9013fe;
+  --accent: #50e3c2;
+  --card-bg: #ffffff;
+  --shadow: rgba(74, 144, 226, 0.2);
+}
+
+.dark-theme {
+  --bg: #121212;
+  --text: #eee;
+  --primary: #8a4fff;
+  --secondary: #bd7fff;
+  --accent: #3ad9b1;
+  --card-bg: #1e1e1e;
+  --shadow: rgba(138, 79, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+#theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+#theme-toggle:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  width: 90%;
+}
+.section {
+  display: none;
+}
+.section.active {
+  display: block;
+}
+.sub-section {
+  margin-bottom: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 0.3rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.note-app {
+  max-width: 600px;
+}
+.note-app input {
+  width: 70%;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent);
+}
+.note-app button {
+  padding: 0.6rem 1.2rem;
+  margin-left: 0.7rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.note {
+  background: var(--card-bg);
+  box-shadow: 0 2px 10px var(--shadow);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin: 0.7rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.note-actions button {
+  background: var(--accent);
+  border: none;
+  padding: 0.3rem 0.6rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.note-actions button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--accent);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: var(--card-bg);
+  color: var(--text);
+}
+.contact-form button {
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: var(--secondary);
+}
+
+.controls {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+select {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1.5px solid var(--accent);
+  background: var(--card-bg);
+  color: var(--text);
+  font-weight: 600;
+}
+#product-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.product.card img {
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 3px 8px var(--shadow);
+}
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+}
+
+

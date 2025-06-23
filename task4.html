@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panguluri Lakshmi | Portfolio</title>
+  <link rel="stylesheet" href="task4.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">P. Lakshmi</div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-btn active" data-target="portfolio">Portfolio</a></li>
+        <li><a href="#" class="nav-btn" data-target="notes">Note App</a></li>
+        <li><a href="#" class="nav-btn" data-target="products">Product Listing</a></li>
+        <li><button id="theme-toggle" title="Toggle Theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section active">
+      <section id="about" class="sub-section">
+        <h2>About Me</h2>
+        <div class="card">
+          Highly motivated and academically strong B.Tech student in Information Technology (CGPA: 9.5), with hands-on experience in Python, SQL, Django, and frontend development. Skilled in solving data structure problems and building web applications. Seeking a Software Development or Web Development Internship to apply problem-solving and programming skills in real-world projects.
+        </div>
+      </section>
+
+      <section id="projects" class="sub-section">
+        <h2>Projects</h2>
+        <div class="card">🎓 <strong>Student Record Management System</strong><br/>CLI app in Python & MySQL with input validation, data persistence, and search.</div>
+        <div class="card">🌐 <strong>Personal Portfolio Website</strong><br/>Responsive website with GitHub integration to showcase academic and technical work.</div>
+        <div class="card">🐶 <strong>Pet E-Commerce Website</strong><br/>Built in Django with login, cart, and order checkout for pet products.</div>
+      </section>
+
+      <section id="skills" class="sub-section">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="card">Languages: Python, C, C++, Java</div>
+          <div class="card">Web Dev: HTML, CSS, JavaScript, Django</div>
+          <div class="card">Databases: MySQL, SQLite</div>
+          <div class="card">Concepts: DSA, OOP, DBMS, OS</div>
+        </div>
+      </section>
+
+      <section id="contact" class="sub-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Note App Section -->
+    <section id="notes" class="section">
+      <h2>Note App</h2>
+      <div class="note-app">
+        <div class="controls">
+          <input id="note-input" type="text" placeholder="Type a new note..." />
+          <button id="add-note">Add Note</button>
+        </div>
+        <div id="note-list"></div>
+      </div>
+    </section>
+
+    <!-- Product Listing Section -->
+    <section id="products" class="section">
+      <h2>Product Listing</h2>
+      <div class="controls">
+        <select id="category-filter">
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <select id="sort-option">
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating-desc">Rating</option>
+        </select>
+      </div>
+      <div id="product-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Panguluri Lakshmi | All Rights Reserved
+  </footer>
+
+  <script src="task4.js"></script>
+</body>
+</html>
+

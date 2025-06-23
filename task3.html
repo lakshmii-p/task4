@@ -2,58 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Quiz & Joke Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz & Giggles Zone</title>
   <link rel="stylesheet" href="task3.css" />
 </head>
 <body>
-  <header>
-    <h1>Responsive Quiz & Joke Page</h1>
-  </header>
-
   <div class="container">
-    <section id="quiz">
-      <h2>Quick Quiz</h2>
-      <form id="quizForm">
-        <div class="quiz-question">
-          <p>1. What does HTML stand for?</p>
-          <div class="quiz-options">
-            <label><input type="radio" name="q1" value="0"> Hyperlinks and Text Markup Language</label>
-            <label><input type="radio" name="q1" value="1"> HyperText Markup Language</label>
-            <label><input type="radio" name="q1" value="0"> Home Tool Markup Language</label>
-          </div>
-        </div>
+    <h1>Quiz & Giggles Zone</h1>
+    <p class="subtitle">Test your knowledge and brighten your day</p>
 
-        <div class="quiz-question">
-          <p>2. What does CSS stand for?</p>
-          <div class="quiz-options">
-            <label><input type="radio" name="q2" value="1"> Cascading Style Sheets</label>
-            <label><input type="radio" name="q2" value="0"> Creative Style System</label>
-            <label><input type="radio" name="q2" value="0"> Colorful Style Syntax</label>
-          </div>
-        </div>
+    <!-- Quiz Section -->
+    <div class="card" id="quiz-card">
+      <h2>Brain Teaser Central</h2>
+      <p>Challenge yourself with our interactive knowledge quiz</p>
+      <p id="question" class="question" aria-live="polite"></p>
+      <div id="options" class="options"></div>
+      <button id="next-btn" class="next-btn" type="button" disabled>Next →</button>
+      <p id="score" class="score"></p>
+    </div>
 
-        <div class="quiz-question">
-          <p>3. Which language is used to add interactivity to a webpage?</p>
-          <div class="quiz-options">
-            <label><input type="radio" name="q3" value="0"> HTML</label>
-            <label><input type="radio" name="q3" value="1"> JavaScript</label>
-            <label><input type="radio" name="q3" value="0"> CSS</label>
-          </div>
-        </div>
-
-        <button type="button" onclick="calculateScore()">Submit Quiz</button>
-      </form>
-      <div class="result" id="quizResult"></div>
-    </section>
-
-    <hr />
-
-    <section id="joke">
-      <h2>Need a Laugh?</h2>
-      <button onclick="fetchJoke()">Get Random Joke</button>
-      <div class="joke" id="jokeDisplay"></div>
-    </section>
+    <!-- Joke Section -->
+    <div class="card">
+      <h2>Daily Dose of Humor</h2>
+      <p>Fresh jokes delivered to tickle your funny bone</p>
+      <p id="joke-q" class="joke-question">How do you organize a space party?</p>
+      <p id="joke-a" class="joke-answer">You planet</p>
+      <button class="joke-btn" type="button" onclick="getAnotherJoke()">Get another joke 🥲</button>
+    </div>
   </div>
 
   <script src="task3.js"></script>
